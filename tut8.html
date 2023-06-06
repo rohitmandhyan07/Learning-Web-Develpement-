@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial-8 Forms and Input Tags</title>
+</head>
+<body>
+    <a href="/tut4.html" target="_blank">Tutorial-4</a><br>
+    <a href="/tut5.html" target="_blank">Tutorial-5</a><br>
+    <a href="/tut6.html" target="_blank">Tutorial-6</a><br>
+    <a href="/tut7.html" target="_blank">Tutorial-7</a><br>
+    <h2>This is HTML forms tutorial</h2>
+
+    <form action="backend.php"> 
+        <b>label</b> tag is used for the case when we want to click on the input requirement 
+        and want that text box open directly. 
+        <br>
+        <br> 
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="MyName" id="name"> div is a block element, it covers a full block. So no need of <b>br</b> tag. 
+        </div>
+        We will achieve this spacing using margin and padding by Css and not giving spaces by <b>br</b> tag.
+        <br><br>
+        <div>
+            <label for="role">Role: </label>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date: </label>
+            <input type="date" name="myDate" id="date"> 
+        </div>
+        <br>
+        <div>
+            <label for="number">Bonus: </label>
+            <input type="number" name="myNumber" id="number" >
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender: </label>
+             Male<input type="radio" name="myGender" id="gender" >
+            Female <input type="radio" name="myGender" >
+            Other <input type="radio" name="myGender" >
+        </div>
+        <br>
+        <div>
+            <label for="eligibility">Are You Eligible: </label>
+             <input type="checkbox" name="myCheckbox" id="eligibility"checked >
+        </div>
+        <br>
+        <div>
+            <label for="you">Write about Yourself: </label>
+            ___________________________________________<b>label</b> tag  will not apply on <b>textarea</b> tag
+             <br><textarea name="myText" id="" cols="90" rows="7" id="you"></textarea>
+        </div>
+        <br> 
+        <div>
+            <label for="car">Car:</label>
+            <select name="myCar" id="car">
+                <option value="wgn">Wagonar</option>
+                <option value="alt" selected>Alto</option >
+                <option value="swf">Swift</option>
+            </select>
+        </div>
+        <br>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now"> 
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tut-19 Height, width, border and backgrounds</title>
+    <style>
+        #firstpara{
+            background-color: red;
+            height: 100px;
+            width: 800px;
+            /* border-color: green;
+            border-width: 5px; 
+            border-style: solid; */
+            /* To write above 3 lines in a single one and reduce efforts, see line below */
+            border: 4px solid green;
+            border-radius: 3px;
+        }
+        #secondpara{
+        height: 100px;
+        width: 800px;   
+        background-color: rgb(15, 218, 180);
+        border-top: 4px solid purple;
+        border-right: 4px solid rgb(8, 87, 205);
+        border-bottom: 4px solid rgb(245, 245, 6);
+        border-left: 4px solid rgb(234, 96, 10);
+    }
+    #thirdpara{
+        height: 400px;
+        width: 700px;
+        background-image: url('data:image/jpeg;base64,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');
+        border: 4px solid cyan;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    </style>
+</head>
+<body>
+<h3>This is Heading</h3>
+<p id="firstpara">This is paragraph</p>
+When You write only border-width, nothing appear in page. 
+when you add border style: solid, you get a default black coloured border.
+<p id="secondpara">Now we want to create border on only one side in this paragraph.</p>
+<h3> This is 3rd heading </h3>
+<p id="thirdpara">You Can add a background image by typing <b>backim, or bim    </b> in vs code ,and full name will automatically appear</p>
+
+
+
+</body>
+</html>
