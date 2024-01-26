@@ -93,7 +93,7 @@ ul li::before{
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background-image: url(/Learning-Web-Develpement-/assets/img/unchecked.png);
+    background-image: url(/assets/img/unchecked.png);
     background-size: cover;
     /* Value	Description	Demo
 auto	- Default value. The background image is displayed in its original size	
@@ -118,7 +118,7 @@ ul li.checked{
 }
 ul li.checked::before{
     content: '';
-    background-image: url(/Learning-Web-Develpement-/assets/img/checked.png);
+    background-image: url(/assets/img/checked.png);
 }
 ul li span{
     position: absolute;
